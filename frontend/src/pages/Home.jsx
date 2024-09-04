@@ -1,18 +1,14 @@
 import React from "react";
-import Footer from "../components/Footer.jsx";
-import Navbar from "../components/Navbar.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import Navbar from "../components/Header/Navbar.jsx";
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen flex flex-col">
-      {/* Navbar */}
-      <header className="sticky top-0 z-50">
-        <Navbar />
-      </header>
-
+    <div className="flex flex-col">
       {/* Hero Section */}
       <section
-        className="bg-cover bg-center py-24 text-center text-white flex-grow"
+        className=" bg-cover bg-center py-24 text-center text-white flex-grow"
         style={{
           backgroundImage: "url('disaster-image1.avif')",
         }}
@@ -25,9 +21,12 @@ const HomePage = () => {
             Get real-time updates from news websites and social media all in one
             place.
           </p>
-          <a href="#" className="btn btn-primary">
+          {/* <a href="#" className="btn btn-primary">
             Get Started
-          </a>
+          </a> */}
+          <Link to="/login" className="btn btn-primary">
+            Get Started
+          </Link>
         </div>
       </section>
 
@@ -47,21 +46,29 @@ const HomePage = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="feature-item p-6 bg-white shadow-md rounded-lg text-center">
             <h3 className="text-xl font-semibold mb-4">Real-Time Updates</h3>
-            <p>Stay informed with the latest updates from multiple reliable sources.</p>
+            <p>
+              Stay informed with the latest updates from multiple reliable
+              sources.
+            </p>
           </div>
           <div className="feature-item p-6 bg-white shadow-md rounded-lg text-center">
-            <h3 className="text-xl font-semibold mb-4">Social Media Integration</h3>
-            <p>Get the latest news and updates from social media platforms like Twitter and Facebook.</p>
+            <h3 className="text-xl font-semibold mb-4">
+              Social Media Integration
+            </h3>
+            <p>
+              Get the latest news and updates from social media platforms like
+              Twitter and Facebook.
+            </p>
           </div>
           <div className="feature-item p-6 bg-white shadow-md rounded-lg text-center">
             <h3 className="text-xl font-semibold mb-4">Easy to Use</h3>
-            <p>Our platform is designed to be user-friendly, ensuring easy navigation during critical times.</p>
+            <p>
+              Our platform is designed to be user-friendly, ensuring easy
+              navigation during critical times.
+            </p>
           </div>
         </div>
       </section>
-
-      {/* Footer */}
-      <Footer />
     </div>
   );
 };

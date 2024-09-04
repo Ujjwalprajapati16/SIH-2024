@@ -1,41 +1,44 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <header className="bg-white text-black p-4">
       <nav className="container mx-auto flex justify-between items-center">
-        <h1 className="text-3xl font-bold">Disaster Info Hub</h1>
+        <h1 className="text-3xl font-bold">
+          <Link to="/">Disaster Info Hub</Link>
+        </h1>
         <ul className="flex space-x-4">
           <li>
-            <a href="#" className="hover:text-gray-300">
+            <Link to="/" className="hover:text-gray-300">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-gray-300">
+            <Link to="/news" className="hover:text-gray-300">
               News
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-gray-300">
+            <Link to="/social-media" className="hover:text-gray-300">
               Social Media
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#" className="hover:text-gray-300">
+            <Link to="/about" className="hover:text-gray-300">
               About
-            </a>
+            </Link>
           </li>
         </ul>
-        <div className=" bg-white dropdown dropdown-end">
+        <div className="bg-white dropdown dropdown-end">
           <div
             tabIndex={0}
             role="button"
             className="btn btn-ghost btn-circle avatar"
           >
-            <div className=" ring-primary ring-offset-base-100 w-10 rounded-full ring ring-offset-2">
+            <div className="ring-primary ring-offset-base-100 w-10 rounded-full ring ring-offset-2">
               <img
-                alt="Tailwind CSS Navbar component"
+                alt="User Avatar"
                 src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp"
               />
             </div>
@@ -45,16 +48,16 @@ const Navbar = () => {
             className="bg-white menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
-              <a className="justify-between">
+              <Link to="/profile" className="justify-between">
                 Profile
                 <span className="badge">New</span>
-              </a>
+              </Link>
             </li>
             <li>
-              <a>Settings</a>
+              <Link to="/settings">Settings</Link>
             </li>
             <li>
-              <a>Logout</a>
+              <Link to="/logout">Logout</Link>
             </li>
           </ul>
         </div>
