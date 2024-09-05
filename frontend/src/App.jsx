@@ -7,6 +7,8 @@ import Footer from "./components/Footer/Footer";
 import Dashboard from "./pages/DashBoard";
 import SocialMediaPage from "./pages/SocialMedia";
 import AboutUs from "./pages/AboutUs";
+import Login from "./pages/Login";
+import SignUp from "./pages/Signup";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="/news" element={<NewsPage />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/social-media" element={<SocialMediaPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
 
