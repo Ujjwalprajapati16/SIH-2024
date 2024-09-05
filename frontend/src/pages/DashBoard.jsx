@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import MapComponent from "../components/Disaster/MapComponent";
 import DisasterList from "../components/Disaster/DisasterList";
+import Cards from "../components/Disaster/DisasterCard";
 
 const Dashboard = () => {
   const [disasters, setDisasters] = useState([]);
@@ -35,9 +36,13 @@ const Dashboard = () => {
       <h1 className="text-3xl font-bold text-center mb-8">
         Disaster Dashboard
       </h1>
+      <div className="mb-8">
+        <Cards/>
+      </div>
 
       {/* First, display the map */}
       <div className="mb-8">
+      <h1 className="text-3xl font-bold text-center mb-8">Disaster Map</h1>
         <MapComponent disasters={disasters} />{" "}
         {/* Pass the fetched disasters to MapComponent */}
       </div>
