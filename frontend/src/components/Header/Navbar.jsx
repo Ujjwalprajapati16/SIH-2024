@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <header className="bg-white text-black p-4">
+    <header className="bg-white text-black p-4 z-50 shadow-lg">
       <nav className="container mx-auto flex justify-between items-center">
         <h1 className="text-3xl font-bold">
           <Link to="/">Disaster Info Hub</Link>
@@ -35,10 +35,7 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div>
-          
-        </div>
-        <div className=" bg-white dropdown dropdown-end">
+        <div className="bg-white dropdown dropdown-end">
           <div
             tabIndex={0}
             role="button"
