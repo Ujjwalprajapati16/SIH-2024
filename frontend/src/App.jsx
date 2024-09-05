@@ -4,6 +4,9 @@ import HomePage from "./pages/Home";
 import NewsPage from "./pages/News";
 import Navbar from "./components/Header/Navbar";
 import Footer from "./components/Footer/Footer";
+import Dashboard from "./pages/DashBoard";
+import SocialMediaPage from "./pages/SocialMedia";
+import AboutUs from "./pages/AboutUs";
 
 function App() {
   return (
@@ -16,6 +19,9 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/news" element={<NewsPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/social-media" element={<SocialMediaPage />} />
+          <Route path="/about" element={<AboutUs />} />
         </Routes>
 
         <Footer />

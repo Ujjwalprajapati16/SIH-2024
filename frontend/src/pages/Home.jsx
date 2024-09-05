@@ -1,6 +1,4 @@
 import React from "react";
-import Footer from "../components/Footer/Footer.jsx";
-import Navbar from "../components/Header/Navbar.jsx";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
@@ -24,9 +22,22 @@ const HomePage = () => {
           {/* <a href="#" className="btn btn-primary">
             Get Started
           </a> */}
-          <Link to="/login" className="btn btn-primary">
+          {/*  <Link to="/login" className="btn btn-primary">
             Get Started
-          </Link>
+          </Link>*/}
+          <a href="#my_modal_8" className="btn btn-primary">
+            Get Started
+          </a>
+
+          <div className="modal bg-white" role="dialog" id="my_modal_8">
+            <div className="modal-box bg-white">
+              <h3 className="text-lg text-black font-bold">Hello!</h3>
+              <p className="py-4 text-black">You need to login First to start!!</p>
+              <div className="modal-action">
+                <Link to="/login" className="btn btn-primary">Log In</Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -41,7 +52,7 @@ const HomePage = () => {
       </section>
 
       {/* Additional Content Section */}
-      <section className="bg-gray-100 container mx-auto py-12 text-black">
+      <section className="bg-gray-100 container mx-auto w-max py-12 text-black">
         <h2 className="text-3xl font-bold text-center mb-6">Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="feature-item p-6 bg-white shadow-md rounded-lg text-center">

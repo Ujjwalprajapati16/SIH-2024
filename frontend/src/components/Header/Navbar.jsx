@@ -25,12 +25,20 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link to="/dashboard" className="hover:text-gray-300">
+              Dashboard
+            </Link>
+          </li>
+          <li>
             <Link to="/about" className="hover:text-gray-300">
               About
             </Link>
           </li>
         </ul>
-        <div className="bg-white dropdown dropdown-end">
+        <div>
+          
+        </div>
+        <div className=" bg-white dropdown dropdown-end">
           <div
             tabIndex={0}
             role="button"
@@ -45,16 +53,18 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="bg-white menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            className="bg-white text-black menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
           >
             <li>
               <Link to="/profile" className="justify-between">
                 Profile
-                <span className="badge">New</span>
               </Link>
             </li>
             <li>
-              <Link to="/settings">Settings</Link>
+              <Link to="/signup">Sign Up</Link>
+            </li>
+            <li>
+              <Link to="/login">Log In</Link>
             </li>
             <li>
               <Link to="/logout">Logout</Link>
