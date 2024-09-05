@@ -1,6 +1,6 @@
-// src/pages/SocialMediaPage.jsx
 import React from "react";
 import SocialMediaCard from "../components/SocialMedia/SocialMediaCard";
+import TweetCard from "../components/Tweeter/tweetCard";
 
 const SocialMediaPage = () => {
   return (
@@ -9,7 +9,7 @@ const SocialMediaPage = () => {
         <h1 className="text-4xl font-bold text-center mb-8">
           Social Media Updates
         </h1>
-
+        <TweetCard />
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <SocialMediaCard
             platform="twitter"
