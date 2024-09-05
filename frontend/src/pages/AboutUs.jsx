@@ -27,9 +27,9 @@ const AboutUs = () => {
       <h1 className="text-4xl font-bold text-center mb-8">About Us</h1>
 
       <section className="mb-8">
-        <h2 className="text-3xl font-semibold mb-4">Welcome to SwiftAid</h2>
+        <h2 className="text-3xl font-semibold mb-4">Welcome to ResQ</h2>
         <p className="text-lg leading-relaxed">
-          At SwiftAid, our mission is to enhance safety and coordination during
+          At ResQ, our mission is to enhance safety and coordination during
           disasters by providing real-time, actionable information to those who
           need it most. We are dedicated to harnessing technology to support
           first responders, organizations, and individuals in navigating through
@@ -80,7 +80,7 @@ const AboutUs = () => {
       <section className="mb-8">
         <h2 className="text-3xl font-semibold mb-4">Our Technology</h2>
         <p className="text-lg leading-relaxed">
-          Leveraging cutting-edge technology and data analytics, SwiftAid brings
+          Leveraging cutting-edge technology and data analytics, ResQ brings
           together diverse data streams, including satellite imagery, weather
           data, social media updates, and official reports. Our advanced
           algorithms ensure that you receive accurate and timely information to
@@ -122,8 +122,8 @@ const AboutUs = () => {
         <p className="text-lg leading-relaxed">
           We believe that collaboration is key to effective disaster management.
           Whether you’re a first responder, a community leader, or an individual
-          looking to stay informed, we invite you to explore SwiftAid and join
-          us in making a difference.
+          looking to stay informed, we invite you to explore ResQ and join us in
+          making a difference.
         </p>
       </section>
 
@@ -141,8 +141,8 @@ const AboutUs = () => {
           Join Us in Building a Safer Future
         </h2>
         <p className="text-lg leading-relaxed">
-          Thank you for choosing SwiftAid. Together, we can navigate through
-          crises with greater resilience and hope for a safer tomorrow.
+          Thank you for choosing ResQ. Together, we can navigate through crises
+          with greater resilience and hope for a safer tomorrow.
         </p>
       </section>
       <h2 className="text-3xl font-bold mt-8 mb-4">Our Team</h2>

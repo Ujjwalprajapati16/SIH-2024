@@ -10,6 +10,7 @@ import AboutUs from "./pages/AboutUs";
 import Login from "./pages/Login";
 import SignUp from "./pages/Signup";
 import DisasterList from "./components/Disaster/DisasterList";
+import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/disaster/:id" element={<DisasterList />} />
         </Routes>
 

@@ -6,7 +6,7 @@ const Navbar = () => {
     <header className="bg-white text-black p-4 z-50 shadow-lg">
       <nav className="container mx-auto flex justify-between items-center">
         <h1 className="text-3xl font-bold">
-          <Link to="/">Disaster Info Hub</Link>
+          <Link to="/">ResQ</Link>
         </h1>
         <ul className="flex space-x-4">
           <li>
@@ -27,6 +27,11 @@ const Navbar = () => {
           <li>
             <Link to="/dashboard" className="hover:text-gray-300">
               Dashboard
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-gray-300">
+              Contact Us
             </Link>
           </li>
           <li>
